@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("{% static '/images/movies.png' %}");
+    background-size: 100% auto;
+    background-color: #000000;
+}
+
+.sunshine{
+    width: 300px;
+    padding: 25px;
+    position :absolute;
+    border-radius: 24px;
+    opacity: 0.9;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #191919;
+    text-align: center;
+}
+.sunshine h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+.sunshine input[type = "text"],.sunshine input[type ="password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #b3b4b5;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: rgb(167, 167, 167);
+    border-radius: 24px;
+    transition :0.25s;
+    
+}
+
+.sunshine input[type = "text"]:focus,.sunshine input[type ="password"]:focus{
+    width: 280px;
+    border-color: #fa0e0e;
+}
+
+.sunshine input[type = "submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #b3b4b5;
+    padding: 14px 40px;
+    outline: none;
+    color: rgb(167, 167, 167);
+    border-radius: 24px;
+    transition :0.25s;
+    cursor: pointer;
+}
+.sunshine input[type = "submit"]:hover{
+    background: #af0000;
+}
+
