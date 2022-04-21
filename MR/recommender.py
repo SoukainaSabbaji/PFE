@@ -3,7 +3,7 @@ import numpy as np
 
 #loading the first dataset containing the movie_id title and cast
 ds1 = pd.read_csv('tmdb_5000_credits.csv')
-#loadind the second dataset with additional infos
+#loading the second dataset with additional infos
 ds2 = pd.read_csv('tmdb_5000_movies.csv')
 
 ds1.columns =['id','title','cast','crew']
@@ -17,7 +17,7 @@ rom sklearn.feature_extraction.text import TfidfVectorizer
 
 #Define a TF-IDF Vectorizer Object. Remove all english stop words such as 'the', 'a'
 tfidf = TfidfVectorizer(stop_words='english')
-#Replace NaN with an empty string
+#Replace NaN (not a number) with an empty string
 ds2['overview'] = ds2['overview'].fillna('')
 
 #Construct the required TF-IDF matrix by fitting and transforming the data
